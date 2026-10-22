@@ -94,35 +94,64 @@
             </div>
         </section>
         <section class="container my-5">
-            <h2 class="text-center mb-4">Преимущества проекта</h2>
+            <div id="promoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Слайд 1"></button>
+                    <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="1"
+                        aria-label="Слайд 2"></button>
+                    <button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="2"
+                        aria-label="Слайд 3"></button>
+                </div>
 
-            <div class="row g-4">
-                <div class="col-12 col-md-4">
-                    <div class="p-4 border rounded h-100 bg-white">
-                        <h3 class="h5">Bootstrap-сетка</h3>
-                        <p class="mb-0 text-muted">
-                            Страница построена на 12-колоночной системе Bootstrap.
-                        </p>
+                <div class="carousel-inner rounded overflow-hidden shadow-sm">
+                    <div class="carousel-item active">
+                        <div class="carousel-media">
+                            <img src="images/phone.jpg" alt="Смартфон Nova X5">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block text-start">
+                            <span class="badge bg-success mb-2">Новинка</span>
+                            <h2 class="h3 fw-bold">Смартфон Nova X5</h2>
+                            <p class="mb-3">6.7" AMOLED 120 Гц, камера 108 Мп, зарядка 67 Вт.</p>
+                            <a class="btn btn-light btn-sm" href="product-1.html">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="carousel-media">
+                            <img src="images/headphones.jpg" alt="Наушники AeroBuds Pro">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block text-start">
+                            <span class="badge bg-warning text-dark mb-2">Хит</span>
+                            <h2 class="h3 fw-bold">Наушники AeroBuds Pro</h2>
+                            <p class="mb-3">ANC до 35 дБ, Bluetooth 5.3, до 36 часов автономности.</p>
+                            <a class="btn btn-light btn-sm" href="product-2.html">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="carousel-media">
+                            <img src="images/laptop.jpeg" alt="Ноутбук Vertex Air 14">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block text-start">
+                            <span class="badge bg-danger mb-2">Скидка −10%</span>
+                            <h2 class="h3 fw-bold">Ноутбук Vertex Air 14</h2>
+                            <p class="mb-3">Ryzen 7, 16 ГБ ОЗУ, SSD 512 ГБ, до 12 часов работы.</p>
+                            <a class="btn btn-light btn-sm" href="product-3.html">Подробнее</a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-md-4">
-                    <div class="p-4 border rounded h-100 bg-white">
-                        <h3 class="h5">Адаптивность</h3>
-                        <p class="mb-0 text-muted">
-                            Колонки меняют ширину в зависимости от размера экрана.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-4">
-                    <div class="p-4 border rounded h-100 bg-white">
-                        <h3 class="h5">Готовая база</h3>
-                        <p class="mb-0 text-muted">
-                            Проект подготовлен к добавлению карточек, форм и модальных окон.
-                        </p>
-                    </div>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#promoCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#promoCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                </button>
             </div>
         </section>
 
