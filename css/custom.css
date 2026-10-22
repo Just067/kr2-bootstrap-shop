@@ -1,16 +1,31 @@
-body {
-  min-height: 100vh;
-}
-
-.placeholder-box {
-  min-height: 240px;
-}
-
-.placeholder-image {
-  min-height: 320px;
-}
-
 .card-img-top {
-  height: 180px;
-  object-fit: cover;
+  height: 200px;
+  object-fit: contain;
+}
+
+.preview__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.card {
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 .75rem 1.5rem rgba(0, 0, 0, .08) !important;
+}
+
+.badge.bg-success {
+  background: linear-gradient(135deg, #198754, #20c997) !important;
+}
+
+.badge.bg-danger {
+  background: linear-gradient(135deg, #dc3545, #f06595) !important;
+}
+
+.badge.bg-warning {
+  background: linear-gradient(135deg, #ffc107, #fd7e14) !important;
 }
